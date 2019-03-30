@@ -351,7 +351,11 @@
                         <viewLayoutGuide key="safeArea" id="Blx-Mb-OWb"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Lookup Place" id="CUE-q1-Pqv"/>
+                        <barButtonItem title="Lookup Place" id="CUE-q1-Pqv">
+                            <connections>
+                                <action selector="lookUpPlacePressed:" destination="L7d-5i-Cie" id="c0z-lh-fq9"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="R1z-zr-Kjm">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="S5P-gk-K1R">
@@ -437,6 +441,6 @@
         <image name="star-white" width="30.666666030883789" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sl5-aU-Gjj"/>
+        <segue reference="Zox-RK-nHB"/>
     </inferredMetricsTieBreakers>
 </document>
