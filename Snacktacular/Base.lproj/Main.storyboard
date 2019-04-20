@@ -511,9 +511,58 @@
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="0LO-EB-jTf">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="vzv-yb-gSc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZBx-9h-d6I">
+                                        <rect key="frame" x="0.0" y="62" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZBx-9h-d6I" id="YWw-5U-0wc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRN-lD-lgv">
+                                                    <rect key="frame" x="8" y="5" width="82" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="LZS-XT-rtJ"/>
+                                                        <constraint firstAttribute="height" constant="24" id="fZr-4B-A38"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5J-hd-Q60">
+                                                    <rect key="frame" x="98" y="5" width="269" height="30"/>
+                                                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="QXj-b0-MUe"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="returnTitleDonePressed:" destination="pgY-Wz-U26" eventType="primaryActionTriggered" id="84c-VP-bo2"/>
+                                                        <action selector="returnTitleDonePressed:" destination="pgY-Wz-U26" eventType="editingDidEnd" id="cpw-IY-gVV"/>
+                                                        <action selector="reviewTitleChanged:" destination="pgY-Wz-U26" eventType="editingChanged" id="IaY-LA-mG2"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="s5J-hd-Q60" firstAttribute="top" secondItem="YWw-5U-0wc" secondAttribute="top" constant="5" id="Bo0-vJ-PCk"/>
+                                                <constraint firstItem="MRN-lD-lgv" firstAttribute="top" secondItem="YWw-5U-0wc" secondAttribute="top" constant="5" id="G1x-gc-F4Y"/>
+                                                <constraint firstItem="s5J-hd-Q60" firstAttribute="leading" secondItem="MRN-lD-lgv" secondAttribute="trailing" constant="8" id="gnM-62-QX0"/>
+                                                <constraint firstItem="MRN-lD-lgv" firstAttribute="leading" secondItem="YWw-5U-0wc" secondAttribute="leading" constant="8" id="nr6-gL-l0O"/>
+                                                <constraint firstAttribute="trailing" secondItem="s5J-hd-Q60" secondAttribute="trailing" constant="8" id="yTN-h8-nS8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="0k3-ek-aUg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="76" id="X8a-dg-yNA">
-                                        <rect key="frame" x="0.0" y="62" width="375" height="76"/>
+                                        <rect key="frame" x="0.0" y="106" width="375" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X8a-dg-yNA" id="2ji-d2-F6J">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="75.666666666666671"/>
@@ -594,56 +643,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection id="vzv-yb-gSc">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZBx-9h-d6I">
-                                        <rect key="frame" x="0.0" y="138" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZBx-9h-d6I" id="YWw-5U-0wc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRN-lD-lgv">
-                                                    <rect key="frame" x="8" y="5" width="82" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="LZS-XT-rtJ"/>
-                                                        <constraint firstAttribute="height" constant="24" id="fZr-4B-A38"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5J-hd-Q60">
-                                                    <rect key="frame" x="98" y="5" width="269" height="30"/>
-                                                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="QXj-b0-MUe"/>
-                                                    </constraints>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                                    <connections>
-                                                        <action selector="returnTitleDonePressed:" destination="pgY-Wz-U26" eventType="primaryActionTriggered" id="84c-VP-bo2"/>
-                                                        <action selector="returnTitleDonePressed:" destination="pgY-Wz-U26" eventType="editingDidEnd" id="cpw-IY-gVV"/>
-                                                        <action selector="reviewTitleChanged:" destination="pgY-Wz-U26" eventType="editingChanged" id="IaY-LA-mG2"/>
-                                                    </connections>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="s5J-hd-Q60" firstAttribute="top" secondItem="YWw-5U-0wc" secondAttribute="top" constant="5" id="Bo0-vJ-PCk"/>
-                                                <constraint firstItem="MRN-lD-lgv" firstAttribute="top" secondItem="YWw-5U-0wc" secondAttribute="top" constant="5" id="G1x-gc-F4Y"/>
-                                                <constraint firstItem="s5J-hd-Q60" firstAttribute="leading" secondItem="MRN-lD-lgv" secondAttribute="trailing" constant="8" id="gnM-62-QX0"/>
-                                                <constraint firstItem="MRN-lD-lgv" firstAttribute="leading" secondItem="YWw-5U-0wc" secondAttribute="leading" constant="8" id="nr6-gL-l0O"/>
-                                                <constraint firstAttribute="trailing" secondItem="s5J-hd-Q60" secondAttribute="trailing" constant="8" id="yTN-h8-nS8"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection id="0k3-ek-aUg">
-                                <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="278" id="Ive-Ug-tFd">
                                         <rect key="frame" x="0.0" y="182" width="375" height="278"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -758,17 +757,17 @@
                         <outlet property="reviewTextView" destination="51s-xy-so9" id="SaU-h1-x3D"/>
                         <outlet property="reviewTitleField" destination="s5J-hd-Q60" id="CKt-JF-KAY"/>
                         <outlet property="saveBarButton" destination="16w-tc-86r" id="aWt-VR-UUN"/>
-                        <outletCollection property="starButtonCollection" destination="yCi-Dy-usz" collectionClass="NSMutableArray" id="VQb-aq-n5y"/>
-                        <outletCollection property="starButtonCollection" destination="dNd-1f-n5R" collectionClass="NSMutableArray" id="BYl-h3-h6U"/>
+                        <outletCollection property="starsCollection" destination="8YL-kv-yKQ" collectionClass="NSMutableArray" id="zYO-UC-rxU"/>
                         <outletCollection property="starButtonCollection" destination="zB1-z8-O1G" collectionClass="NSMutableArray" id="biq-yc-BWV"/>
                         <outletCollection property="starButtonCollection" destination="8YL-kv-yKQ" collectionClass="NSMutableArray" id="5kR-Xt-bzZ"/>
-                        <outletCollection property="starButtonCollection" destination="lI4-hM-QVP" collectionClass="NSMutableArray" id="JGR-Ti-rao"/>
-                        <outletCollection property="starButtonCollection" destination="yCi-Dy-usz" collectionClass="NSMutableArray" id="AVc-8Q-wS6"/>
                         <outletCollection property="starsCollection" destination="yCi-Dy-usz" collectionClass="NSMutableArray" id="NWY-Ql-gaz"/>
-                        <outletCollection property="starsCollection" destination="dNd-1f-n5R" collectionClass="NSMutableArray" id="L9u-j3-YMa"/>
-                        <outletCollection property="starsCollection" destination="zB1-z8-O1G" collectionClass="NSMutableArray" id="5AG-sB-SXh"/>
-                        <outletCollection property="starsCollection" destination="8YL-kv-yKQ" collectionClass="NSMutableArray" id="zYO-UC-rxU"/>
+                        <outletCollection property="starButtonCollection" destination="lI4-hM-QVP" collectionClass="NSMutableArray" id="JGR-Ti-rao"/>
                         <outletCollection property="starsCollection" destination="lI4-hM-QVP" collectionClass="NSMutableArray" id="M3o-pS-gj1"/>
+                        <outletCollection property="starsCollection" destination="dNd-1f-n5R" collectionClass="NSMutableArray" id="L9u-j3-YMa"/>
+                        <outletCollection property="starButtonCollection" destination="yCi-Dy-usz" collectionClass="NSMutableArray" id="AVc-8Q-wS6"/>
+                        <outletCollection property="starsCollection" destination="zB1-z8-O1G" collectionClass="NSMutableArray" id="5AG-sB-SXh"/>
+                        <outletCollection property="starButtonCollection" destination="dNd-1f-n5R" collectionClass="NSMutableArray" id="BYl-h3-h6U"/>
+                        <outletCollection property="starButtonCollection" destination="yCi-Dy-usz" collectionClass="NSMutableArray" id="VQb-aq-n5y"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6j-Gn-2Ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
